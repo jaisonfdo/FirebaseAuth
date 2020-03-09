@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/auth_inter_desc_top_margin"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+        android:gravity="center_horizontal"
+        android:text="@string/authMobileVerifying"
+        android:textSize="@dimen/auth_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animationView"
+        android:layout_width="@dimen/iv_size"
+        android:layout_height="@dimen/iv_size"
+        android:layout_marginTop="@dimen/auth_inter_image_top_margin"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDescription"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="warning_animation.json"
+        app:lottie_loop="false"
+        app:lottie_speed="2.5" />
+
+    <ImageView
+        android:id="@+id/ivVerificationState"
+        android:layout_width="@dimen/iv_size"
+        android:layout_height="@dimen/iv_size"
+        android:layout_marginTop="@dimen/auth_inter_image_top_margin"
+        android:src="@drawable/ic_email"
+        android:tint="@color/loginCTABackgroundColor"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDescription" />
+
+    <androidx.core.widget.ContentLoadingProgressBar
+        android:id="@+id/loadingProgressbar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="@dimen/iv_size"
+        android:layout_height="@dimen/iv_size"
+        android:layout_marginTop="@dimen/auth_inter_image_top_margin"
+        android:indeterminateTint="@color/loginCTABackgroundColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDescription" />
+
+    <Button
+        android:id="@+id/btnContinue"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/auth_cta_height"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/auth_inter_image_top_margin"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+        android:backgroundTint="@color/loginCTABackgroundColor"
+        android:text="@string/authContinue"
+        app:layout_constraintTop_toBottomOf="@+id/loadingProgressbar" />
+
+    <TextView
+        android:id="@+id/tvFooter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/items_inbetween_small"
+        android:padding="@dimen/items_inbetween_large"
+        android:text="@string/authMailResend"
+        android:textSize="@dimen/auth_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnContinue" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

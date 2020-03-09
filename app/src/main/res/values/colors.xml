@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="loginAccountKitThemeColorPrimary">#D8F764</color>
+    <color name="loginAccountKitThemeColorPrimaryDark">#ADC650</color>
+    <color name="loginAccountKitThemeColorAccent">#2F3C56</color>
+
+    <color name="loginScreenBackgroundColor">#FFFFFF</color>
+    <color name="loginInputBackgroundColor">#F9F9F9</color>
+    <color name="loginInputBorderColor">#88E84F4F</color>
+    <color name="loginInputTextColor">#4C585D</color>
+
+    <color name="loginCTABackgroundColor">#E59594</color>
+    <color name="loginCTADisabledBackgroundColor">#F9F9F9</color>
+    <color name="loginCTABorderColor">#E59594</color>
+    <color name="loginCTADisabledBorderColor">#F9F9F9</color>
+    <color name="loginCTATextColor">#FFFFFF</color>
+    <color name="loginCTADisabledTextColor">#C9C9C9</color>
+    <color name="loginPageThemeColorAccent">#2F3C56</color>
+
+    <color name="otpNumberBackground">#EBEBEB</color>
+
+    <!--   To change the input field default border color -->
+    <color name="mtrl_textinput_default_box_stroke_color" tools:override="true">#E59594</color>
+
+</resources>

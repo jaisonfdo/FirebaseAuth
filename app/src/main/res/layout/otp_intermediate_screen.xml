@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="listener"
+            type="android.view.View.OnClickListener" />
+
+        <variable
+            name="isValidOTP"
+            type="java.lang.Boolean" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TableLayout
+            android:id="@+id/tableLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/btn1"
+                    style="@style/OTPCodeButtonStyle"
+                    android:onClick="@{listener::onClick}"
+                    android:text="@string/key1" />
+
+                <Button
+                    android:id="@+id/btn2"
+                    style="@style/OTPCodeButtonStyle"
+                    android:layout_marginStart="1dp"
+                    android:onClick="@{listener::onClick}"
+                    android:text="@string/key2" />
+
+                <Button
+                    android:id="@+id/btn3"
+                    style="@style/OTPCodeButtonStyle"
+                    android:layout_marginStart="1dp"
+                    android:onClick="@{listener::onClick}"
+                    android:text="@string/key3" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp">
+
+                <Button
+                    android:id="@+id/btn4"
+                    style="@style/OTPCodeButtonStyle"
+                    android:onClick="@{listener::onClick}"
+                    android:text="@string/key4" />
+
+                <Button
+                    android:id="@+id/btn5"
+                    style="@style/OTPCodeButtonStyle"
+                    android:layout_marginStart="1dp"
+                    android:onClick="@{listener::onClick}"
+                    android:text="@string/key5" />
+
+                <Button
+                    android:id="@+id/btn6"
+                    style="@style/OTPCodeButtonStyle"
+                    android:layout_marginStart="1dp"
+                    android:onClick="@{listener::onClick}"
+                    android:text="@string/key6" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp">
+
+                <Button
+                    android:id="@+id/btn7"
+                    style="@style/OTPCodeButtonStyle"
+                    android:onClick="@{listener::onClick}"
+                    android:text="@string/key7" />
+
+                <Button
+                    android:id="@+id/btn8"
+                    style="@style/OTPCodeButtonStyle"
+                    android:layout_marginStart="1dp"
+                    android:onClick="@{listener::onClick}"
+                    android:text="@string/key8" />
+
+                <Button
+                    android:id="@+id/btn9"
+                    style="@style/OTPCodeButtonStyle"
+                    android:layout_marginStart="1dp"
+                    android:onClick="@{listener::onClick}"
+                    android:text="@string/key9" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp">
+
+                <Button
+                    android:id="@+id/btn_bs"
+                    style="@style/OTPCodeButtonStyle"
+                    android:fontFamily="@font/icomoon"
+                    android:onClick="@{listener::onClick}"
+                    android:text="@string/keyBackspace" />
+
+                <Button
+                    android:id="@+id/btn0"
+                    style="@style/OTPCodeButtonStyle"
+                    android:layout_marginStart="1dp"
+                    android:onClick="@{listener::onClick}"
+                    android:text="@string/key0" />
+
+                <Button
+                    android:id="@+id/btnDone"
+                    style="@style/OTPCodeButtonStyle"
+                    android:layout_marginStart="1dp" />
+            </TableRow>
+        </TableLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toTopOf="@+id/tableLayout"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/tvDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/authMobileEnterCode"
+                android:textSize="@dimen/auth_text" />
+
+            <TextView
+                android:id="@+id/tvMobileNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/items_inbetween_medium"
+                android:gravity="center"
+                android:textColor="@color/loginCTABackgroundColor"
+                android:textSize="@dimen/auth_text" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/otpCodeInputLayerTopMargin">
+
+                <TextView
+                    android:id="@+id/tvCode1"
+                    style="@style/OTPCodeInputFieldStyle"
+                    android:layout_marginStart="0dp" />
+
+                <TextView
+                    android:id="@+id/tvCode2"
+                    style="@style/OTPCodeInputFieldStyle" />
+
+                <TextView
+                    android:id="@+id/tvCode3"
+                    style="@style/OTPCodeInputFieldStyle" />
+
+                <TextView
+                    android:id="@+id/tvCode4"
+                    style="@style/OTPCodeInputFieldStyle" />
+
+                <TextView
+                    android:id="@+id/tvCode5"
+                    style="@style/OTPCodeInputFieldStyle" />
+
+                <TextView
+                    android:id="@+id/tvCode6"
+                    style="@style/OTPCodeInputFieldStyle" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnContinue"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/auth_cta_height"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="@dimen/otpCodeInputLayerTopMargin"
+                android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                android:backgroundTint="@color/auth_cta_background_selector"
+                android:enabled="@{isValidOTP}"
+                android:onClick="@{listener::onClick}"
+                android:text="@string/authContinue"
+                app:layout_constraintTop_toBottomOf="@+id/tvMobileNumberInput" />
+
+            <Button
+                android:id="@+id/btnResendCode"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/auth_cta_height"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="@dimen/items_inbetween_medium"
+                android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                android:backgroundTint="@color/auth_cta_background_selector"
+                android:enabled="false"
+                android:onClick="@{listener::onClick}"
+                android:text="@string/authResendCode"
+                app:layout_constraintTop_toBottomOf="@+id/tvMobileNumberInput" />
+
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

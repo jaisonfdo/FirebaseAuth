@@ -1,0 +1,52 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/loginAccountKitThemeColorPrimary</item>
+        <item name="colorPrimaryDark">@color/loginAccountKitThemeColorPrimaryDark</item>
+        <!--     To change the toolbar text color   -->
+        <item name="toolbarStyle">@style/ToolbarTheme</item>
+    </style>
+
+    <!--     To change the toolbar text color   -->
+
+    <style name="ToolbarTheme" parent="Widget.MaterialComponents.Toolbar">
+        <item name="titleTextColor">@color/loginAccountKitThemeColorAccent</item>
+        <item name="colorControlNormal">@color/loginAccountKitThemeColorAccent</item>
+    </style>
+
+    <!--     To change input field cursor color   -->
+
+    <style name="AuthInputEditTextTheme" parent="ThemeOverlay.MaterialComponents.TextInputEditText.OutlinedBox">
+        <item name="colorControlActivated">@color/loginAccountKitThemeColorAccent</item>
+    </style>
+
+    <style name="AuthInputLayoutTheme" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="materialThemeOverlay">@style/AuthInputEditTextTheme</item>
+    </style>
+
+    <style name="OTPCodeButtonStyle" parent="@style/Widget.MaterialComponents.Button.TextButton">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:textColor">?android:textColorPrimary</item>
+        <item name="android:backgroundTint">@color/otpNumberBackground</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">@dimen/otpCodeCTATextSize</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="cornerRadius">0dp</item>
+    </style>
+
+    <style name="OTPCodeInputFieldStyle">
+        <item name="android:layout_width">@dimen/otpCodeInputFieldSize</item>
+        <item name="android:layout_height">@dimen/otpCodeInputFieldSize</item>
+        <item name="android:inputType">text</item>
+        <item name="android:background">@drawable/pass_code_input_background</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:layout_marginLeft">@dimen/items_inbetween_large</item>
+        <item name="android:gravity">center</item>
+        <item name="android:maxLength">1</item>
+    </style>
+
+</resources>

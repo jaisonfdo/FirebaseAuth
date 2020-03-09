@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">Droidmentor</string>
+
+    <!--   Strings related to Authentication -->
+
+    <!--   Mobile Auth -->
+
+    <string name="authMobileDescription">Enter your mobile number</string>
+    <string name="authMobileValidNumber">Please enter a valid phone number</string>
+    <string name="authMobileEnterCode">Enter the code that was sent to</string>
+    <string name="authMobileInvalidCode">We couldn\'t verify your code.\n Please try again:</string>
+    <string name="authMobileCodeManyRequest">Oops! Too many attempts reached.\n Please try again later</string>
+    <string name="authMobileResendCode">I didn\'t get a code</string>
+    <string name="authMobileVerifying">Verifying your number …</string>
+    <string name="authCodeVerifying">Verifying your code …</string>
+    <string name="authMobileCountryCode">+91</string>
+    <string name="authMobileLater">Later</string>
+    <string name="authResendCode">Resend code to</string>
+
+
+    <!--   Mail Auth -->
+
+    <string name="authMailDescription">Enter your email address</string>
+    <string name="authMailOpenMailBoxDescription">Open the email and confirm your email address</string>
+    <string name="authMailVerifying">Verifying your email address …</string>
+    <string name="authMailInvalid">The link has been invalid or expired</string>
+    <string name="authMailAlreadyLoggedIn">You are already logged in… So redirecting you to home page…</string>
+    <string name="authMailOpenMailBox">Open your Email</string>
+    <string name="authMailResend">Resend Email</string>
+    <string name="authSendNewMail">Send New Email</string>
+
+    <!--  Auth generic-->
+
+    <string name="authSomethingWrong">Oops! Something went wrong.\n Please try again later</string>
+    <string name="authContinue">Continue</string>
+    <string name="authTryAgain">Try Again</string>
+    <string name="authSent">Sent</string>
+    <string name="authNext">Next</string>
+    <string name="authVerified">Verified</string>
+
+
+    <!--  OTP Screen -->
+
+    <string name="key0">0</string>
+    <string name="key1">1</string>
+    <string name="key2">2</string>
+    <string name="key3">3</string>
+    <string name="key4">4</string>
+    <string name="key5">5</string>
+    <string name="key6">6</string>
+    <string name="key7">7</string>
+    <string name="key8">8</string>
+    <string name="key9">9</string>
+    <string name="keyContinue">Continue</string>
+    <string name="keyBackspace" translatable="false">&#xe900;</string>
+
+</resources>
